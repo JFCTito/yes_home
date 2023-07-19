@@ -15,7 +15,7 @@ import com.g14.models.Advertise;
 import com.g14.services.AdvertiseService;
 
 @RestController
-@RequestMapping("/advertise")
+@RequestMapping("/advertisments")
 public class AdvertiseController {
     
     @Autowired
