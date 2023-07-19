@@ -1,5 +1,9 @@
 package com.g14.models;
 
+import org.hibernate.annotations.Cascade;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -16,28 +20,29 @@ public class Advertise {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_anuncio")
+    @Column(name = "id_advertise")
     public int id;
 
-    @Column(name = "titulo")
+    @Column(name = "title")
     public String title;
-    @Column(name="localizacion")
+    @Column(name="localitation")
     public String localitation;
-    @Column(name = "precio")
+    @Column(name = "price")
     public double price;
-    @Column(name = "metros")
+    @Column(name = "mts2")
     public double mts2;
-    @Column(name = "categoria")
+    @Column(name = "category")
     public String category;
-    @Column(name = "imagen")
+    @Column(name = "image")
     public String img;
-    @Column(name = "habitaciones")
+    @Column(name = "rooms")
     public int rooms;
-    @Column(name = "tipo")
+    @Column(name = "type")
     public String type;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name="fk_user", nullable = false)
+    @JsonIgnore
     private Profile profile;
 
 }

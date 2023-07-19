@@ -16,15 +16,15 @@ public class Profile {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_perfil")
+    @Column(name = "id_profile")
     public int id;
     @Column(name = "mail")
     public String mail;
     @Column(name = "password")
     public String pw;
-    @Column(name = "nombre")
+    @Column(name = "name")
     public String name;
-    @Column(name = "apellidos")
+    @Column(name = "lastName")
     public String lastName;
 
     @OneToMany(mappedBy = "profile")
