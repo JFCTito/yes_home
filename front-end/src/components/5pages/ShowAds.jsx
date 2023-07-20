@@ -6,62 +6,78 @@ import { PriceAdd } from "../1atoms/PriceAdd/PriceAdd.jsx";
 import { LocationAdd } from "../1atoms/LocationAdd/LocationAdd.jsx";
 
 function ShowAds() {
-  // const [add, setAdd] = useState([]);
-  // const navigate = useNavigate();
-
-  // const [addList, setAddList] = useState([]);
-  // const [selectedAdd, setSelectedAdd] = useState(null);
-
-  // useEffect(() => {
-  //     fetch('http://localhost:4000/advertisments')
-  //         .then(response => response.json())
-  //         .then(data => setAddList(data.data))
-  //         .catch(error => console.log(error));
-  // }, []);
-
-  // const handleEditAdd = (add) => {
-  //     navigate(`/edit/${add.id}`)
-  // };
-
-  // const handleDeleteAdd = (add) => {
-  //     navigate(`/delete/${add.id}`);
-  // };
-
-  // const cards = add.map((add) => <CardAdd
-  //     key={add.id}
-  //     add={add}
-  //     editAdd={handleEditAdd}
-  //     deleteAdd={handleDeleteAdd}
-  // />);
-
-  // return (
-  //     <div className="addContainer">
-  //         {
-  //             cards
-  //         }
-  //     </div>
-  // )
-
+  
   const [advertisements, setAdvertisements] = useState([]);
+  const [filters, setFilters] = useState({
+    type: "",
+    category: "",
+    localitation: "",
+  });
 
   useEffect(() => {
-    // Función para realizar la petición a la API
-    const fetchAdvertisements = async () => {
-      try {
-        const response = await fetch(`http://localhost:4000/advertisments`);
-        const data = await response.json();
-        setAdvertisements(data);
-      } catch (error) {
-        console.error("Error al obtener los anuncios:", error);
-      }
-    };
-
     fetchAdvertisements();
   }, []);
+
+  const fetchAdvertisements = async () => {
+    try {
+      const params = new URLSearchParams();
+      
+      if (filters.type.trim() !== "") {
+        params.append("type", filters.type);
+      }
+      if (filters.category.trim() !== "") {
+        params.append("category", filters.category);
+      }
+      if (filters.localitation.trim() !== "") {
+        params.append("localitation", filters.localitation);
+      }
+
+      let apiUrl = "http://localhost:4000/advertisments";
+
+      if (params.toString() !== "") {
+        apiUrl += "/filter?" + params.toString();
+      }
+
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+      setAdvertisements(data);
+    } catch (error) {
+      console.error("Error al obtener los anuncios:", error);
+    }
+  };
+
+  const handleApplyFilters = () => {
+    fetchAdvertisements();
+  };
+
 
   return (
     <div>
       <h1>Lista de Anuncios</h1>
+      <div>
+        <input
+          type="text"
+          name="type"
+          placeholder="Type"
+          value={filters.type}
+          onChange={(e) => setFilters({ ...filters, type: e.target.value })}
+        />
+        <input
+          type="text"
+          name="category"
+          placeholder="Category"
+          value={filters.category}
+          onChange={(e) => setFilters({ ...filters, category: e.target.value })}
+        />
+        <input
+          type="text"
+          name="localitation"
+          placeholder="Localitation"
+          value={filters.localitation}
+          onChange={(e) => setFilters({ ...filters, localitation: e.target.value })}
+        />
+        <button onClick={handleApplyFilters}>Aplicar Filtros</button>
+      </div>
       <ul>
         {advertisements.map((ad) => (
           <li key={ad.id}>
@@ -72,16 +88,11 @@ function ShowAds() {
               location={ad.localitation}
               style="locationAdd"
             ></LocationAdd>
-            <p>Boton</p>
-            {/* <p>{ad.mts2}</p>
-              <p>{ad.category}</p>
-              <p>{ad.rooms}</p>
-              <p>{ad.type}</p> */}
           </li>
         ))}
       </ul>
     </div>
   );
-}
+};
 
 export default ShowAds;
