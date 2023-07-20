@@ -10,8 +10,9 @@
 <h2>Table of Contents</h2>
 
 1. Project Description and Technologies.
-2. User Story: Hackton and Stakeholders.
-3. How to Install and Run the Project.
+2. How to Install and Run the Project.
+3. User Story: Client and Stakeholders.
+4. Figma.
 
 ---
 <h2 align="center">Project Description</h2><br>
@@ -27,6 +28,11 @@ The frontend part of the application is developed using React, an open source Ja
 <h3>Communication between Frontend and Backend:</h3> 
 
 Spring Boot is used to develop an API that acts as a communication interface between the frontend and the backend. React uses this API through the useEffect hook to make a request to the Spring Boot backend RESTful API when the component is first mounted. It then uses the useState hook to store the advertisement data fetched in the advertisements state, allowing it to be displayed in the UI and kept up to date as it changes.<br><br>
+
+<p align="center">
+<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image.png" width="700" height="500">
+<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image2.png" width="700" height="500">
+</p>
 
 <h2 align="center">Technologies:</h2>
 
@@ -55,45 +61,59 @@ Spring Boot is used to develop an API that acts as a communication interface bet
 </p>
 
 
+---
+<h2 align="center">How to Install and Run the Project</h2><br>
 
+### Environment configuration:
+
+Make sure to have Java Development Kit [JDK](https://www.oracle.com/java/technologies/downloads/) installed on the server where the Spring Boot part will be hosted.
+Make sure to have [Node.js](https://nodejs.org/es) and npm [Node Package Manager](https://www.npmjs.com/) installed on the server where the React part will be hosted.<br><br>
+
+### Backend [the Spring Boot](https://spring.io/projects/spring-boot):
+Make sure that the database and other application settings are correctly set in the application.properties.
+Compile the Spring Boot project using the Maven build command, such as mvn clean install to create the JAR file.<br><br>
+
+### Frontend [React](https://es.react.dev/):
+Run the npm install command to install all the necessary dependencies.
+Configure the API URLs in the React application to point to the server where the Spring Boot part will be hosted. This can be done using environment variables or configuration files, so that they can be easily switched between development and production environments. You can use http://localhost:4000/advertisments.<br><br>
 
 ---
 
-<h2 align="center">User Story: Hackton and Stakeholders</h2><br>
+<h2 align="center">User Story: Client and Stakeholders</h2><br>
+
+### The Client made the following request:<br>
 
 <p>
-The Stakeholder made the following request: 
-
-### What are the main domain objects in a marketplace?
+What are the main domain objects in a marketplace?
 
 1. Advertisement ⇒ the published content:
   a. Flats, houses, premises, ... in fotocasa or habitaclia.<br>
   b. Job offers on InfoJobs.<br>
   c. Cars or motorcycles on ¿adivinas? <br>
-  d. Almost everything (including the above) on milanuncios.<br><br>
+  d. Almost everything (including the above) on milanuncios.<br>
   
 2. User ⇒ the person looking for content.<br>
-   a. For free!<br><br>
+   a. For free!<br>
    
 3. Customer ⇒ the person or company posting content.<br>
   a. Also called "advertiser" or "professional user".<br>
-  b. The customer pays to publish content.<br><br>
+  b. The customer pays to publish content.<br>
 
 4. Contact ⇒ when the person searching is interested in an ad and decides to contact the advertiser<br>
-  a. A perfect match!<br><br>
+  a. A perfect match!<br>
 
-And some of the main functionalities for our users:<br><br>
+  And some of the main functionalities for our users:<br>
 
 5. Search: <br>
   a. By features.<br>
   b. By free text.<br>
-  c. By geographic area<br><br>
+  c. By geographic area<br>
   
-6. Favorite ads<br><br>
+6. Favorite ads<br>
 
 7. Alerts ⇒ notifications when there are new ads that meet my searches or some other criteria.<br><br>
 
-## About the proposal 
+### Stakeholders: Value proposition<br>
 
 Welcome to YesHome, your number one destination to find your dream home. We are a vibrant and comprehensive marketplace that connects property buyers and sellers, offering a unique and simple experience for all users interested in the real estate market.
 
@@ -108,4 +128,15 @@ Detailed information: We believe in transparency and accurate information. Every
 Verified user profiles: We ensure the safety and trust of our users by verifying profiles. Both buyers and sellers must go through an authentication process to ensure the legitimacy of transactions.
 
 ---
+
+### [Figma ](https://www.figma.com/file/iBVm45jcBsfdfQI7vqBfZZ/prototipo?type=design&node-id=38%3A196&mode=design&t=wbjklZPv8EfdLV1R-1)
+
+<p align="center">
+<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image3.png" width="150" height="250">
+<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image4.png" width="150" height="250">
+<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image5.png" width="150" height="250">
+<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image6.png" width="200" height="250">
+<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image7.png" width="200" height="250">
+</p>
+
 
