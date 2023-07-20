@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-// import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.g14.models.Advertise;
@@ -52,24 +52,42 @@ public class AdvertiseController {
         return adService.findByType(type);
     }
 
-    @GetMapping("/localitation/{localitation}")
-    public List<Advertise> getAdvertisesByLocalitation(@PathVariable String localitation) {
-        return adService.findByLocalitation(localitation);
-    }
-
     @GetMapping("/category/{category}")
     public List<Advertise> getAdvertisesByCategory(@PathVariable String category) {
         return adService.findByCategory(category);
     }
 
-    // @GetMapping("/filter")
-    // public List<Advertise> getAdvertisesByMultiple(@RequestParam String type, @RequestParam String category, @RequestParam String localitation){
-    //     return adService.findByMultiple(type, category, localitation);
-    // }
-
-    @GetMapping("/filter/type/{type}/category/{category}/localitation/{localitation}")
-    public List<Advertise> getAdvertisesByMultiplePath(@PathVariable("type") String type,@PathVariable("category") String category,@PathVariable("localitation") String localitation){
-        return adService.findByMultiple(type,category,localitation);
+    @GetMapping("/localitation/{localitation}")
+    public List<Advertise> getAdvertisesByLocalitation(@PathVariable String localitation) {
+        return adService.findByLocalitation(localitation);
     }
+
+    @GetMapping("/filterMultiple")
+    public List<Advertise> getAdvertisesByMultiple(@RequestParam String type, @RequestParam String category,
+            @RequestParam String localitation) {
+        return adService.findByMultiple(type, category, localitation);
+    }
+
+    @GetMapping("/filterCatLocal")
+    public List<Advertise> getAdvertisesByCategoryAndLocal(@RequestParam String category, @RequestParam String localitation){
+        return adService.findByCategoryAndLocalitation(category, localitation);
+    }
+    @GetMapping("/filterCatType")
+    public List<Advertise> getAdvertisesByCategoryAndType(@RequestParam String category, @RequestParam String type){
+        return adService.findByCategoryAndType(category, type);
+    }
+    @GetMapping("/filterTypeLocal")
+    public List<Advertise> getAdvertisesByTypeAndLocal(@RequestParam String type, @RequestParam String localitation){
+        return adService.findByTypeAndLocalitation(type, localitation);
+    }
+
+
+
+    // @GetMapping("/filter/type/{type}/category/{category}/localitation/{localitation}")
+    // public List<Advertise> getAdvertisesByMultiplePath(@PathVariable("type")
+    // String type,@PathVariable("category") String
+    // category,@PathVariable("localitation") String localitation){
+    // return adService.findByMultiple(type,category,localitation);
+    // }
 
 }

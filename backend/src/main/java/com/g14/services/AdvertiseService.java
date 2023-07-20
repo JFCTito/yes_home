@@ -56,4 +56,16 @@ public class AdvertiseService {
         return repo.findByTypeAndCategoryAndLocalitation(type,category,localitation);
     }
 
+    public List<Advertise> findByCategoryAndLocalitation(String category, String localitation){
+        return repo.findByCategoryAndLocalitation(category, localitation);
+    }
+    public List<Advertise> findByCategoryAndType(String category, String type){
+        return repo.findByCategoryAndType(category, type);
+    }
+    public List<Advertise> findByTypeAndLocalitation(String type, String localitation){
+        return repo.findByTypeAndLocalitation(type, localitation);
+    }
+
+
+
 }
