@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import CardAdd from "./CardAdd"
+import CardAdd from "..//3organisms/CardAdd.jsx"
 
 function ShowAds() {
 
