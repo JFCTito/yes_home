@@ -1,5 +1,6 @@
 import './ShowHome.css'
 import {Buttons} from '../1atoms/buttons/Buttons.jsx'
+import {Input} from '../1atoms/Input/Input.jsx'
 
 const ShowHome = () => {
   return (
@@ -8,6 +9,7 @@ const ShowHome = () => {
       <div className="btnsComprarAlquilar">
       <Buttons style='btnCTA'  text='Comprar' ruta='/mysearch'/> <Buttons style='btnCTA' text='Alquilar' ruta='/mysearch'/>
       </div>
+      <Input/><Input/>
     </div>
   )
 }
