@@ -1,0 +1,15 @@
+ .input{
+    display: flex;
+   
+    align-items: center;
+    
+    flex: 1 0 0;
+    align-self: stretch;
+    border-left: 4px solid #3F5879;
+background: #FFF;  
+
+
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
