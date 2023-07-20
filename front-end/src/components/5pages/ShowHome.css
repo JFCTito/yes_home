@@ -3,4 +3,19 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+.eslogan{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btnsComprarAlquilar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
