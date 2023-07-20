@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/YesHomeblanco.png" width="350" height="150">
+  <img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/YesHomeblanco.png" width="350" height="150">
 </p>
 
 
@@ -30,8 +30,8 @@ The frontend part of the application is developed using React, an open source Ja
 Spring Boot is used to develop an API that acts as a communication interface between the frontend and the backend. React uses this API through the useEffect hook to make a request to the Spring Boot backend RESTful API when the component is first mounted. It then uses the useState hook to store the advertisement data fetched in the advertisements state, allowing it to be displayed in the UI and kept up to date as it changes.<br><br>
 
 <p align="center">
-<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image.png" width="700" height="500">
-<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image2.png" width="700" height="500">
+<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/apiPostman1" width="700" height="500">
+<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/apiPostman2" width="700" height="500">
 </p>
 
 <h2 align="center">Technologies:</h2>
@@ -132,11 +132,10 @@ Verified user profiles: We ensure the safety and trust of our users by verifying
 ### [Figma ](https://www.figma.com/file/iBVm45jcBsfdfQI7vqBfZZ/prototipo?type=design&node-id=38%3A196&mode=design&t=wbjklZPv8EfdLV1R-1)
 
 <p align="center">
-<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image3.png" width="150" height="250">
-<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image4.png" width="150" height="250">
-<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image5.png" width="150" height="250">
-<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image6.png" width="200" height="250">
-<img src="https://github.com/JFCTito/grupo_14/blob/main/front-end/src/img/image7.png" width="200" height="250">
+<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/figma1.png" width="150" height="250">
+<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/figma2.png" width="150" height="250">
+<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/figma3.png" width="150" height="250">
+<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/figma4.png" width="150" height="250">
 </p>
 
 
