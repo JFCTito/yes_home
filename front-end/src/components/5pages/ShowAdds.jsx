@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import CardAdd from "../3organisms/CardAdd.jsx"
 
-function ShowAds() {
+function ShowAdds() {
 
     const [add, setAdd] = useState([]);
     const navigate = useNavigate();
@@ -41,4 +41,4 @@ function ShowAds() {
         </div>
     )
 }
-export default ShowAds;
+export default ShowAdds;

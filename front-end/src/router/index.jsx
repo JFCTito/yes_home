@@ -5,7 +5,7 @@ import MyAdds from "../components/5pages/MyAdds.jsx";
 import CreateAdd from "../components/5pages/CreateAdd.jsx";
 import EditAdd from "../components/5pages/EditAdd.jsx";
 import DeleteAdd from "../components/5pages/DeleteAdd.jsx";
-import ShowAds from "../components/5pages/ShowAds.jsx";
+import ShowAdds from "../components/5pages/ShowAdds.jsx";
 
 
 export const router = createBrowserRouter([
@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/mysearch",
-                element: <ShowAds/>,
+                element: <ShowAdds/>,
             },
             {
                 path: "/create",
