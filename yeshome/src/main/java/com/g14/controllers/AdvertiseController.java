@@ -17,32 +17,32 @@ import com.g14.services.AdvertiseService;
 @RestController
 @RequestMapping("/advertisments")
 public class AdvertiseController {
-    
+
     @Autowired
     AdvertiseService adService;
 
     @GetMapping
-    public List<Advertise> getAllAdvertise(){
-       return adService.getAllAdvertise();
+    public List<Advertise> getAllAdvertise() {
+        return adService.getAllAdvertise();
     }
 
-    @GetMapping(path="/{id}")
-    public void getAdvertiseById(@PathVariable("id") Long id){
-        adService.getAdvertiseById(id);
+    @GetMapping("/{id}")
+    public Advertise getAdvertiseById(@PathVariable Long id) {
+        return adService.getAdvertiseById(id);
     }
 
     @PostMapping
-    public void createAdvertise(Advertise ad){
-        adService.createAdvertise(ad);
+    public Advertise createAdvertise(Advertise ad) {
+        return adService.createAdvertise(ad);
     }
 
     @PutMapping
-    public void updateAdvertise(Advertise ad){
-        adService.updateAdvertise(ad);
+    public Advertise updateAdvertise(Advertise ad) {
+        return adService.updateAdvertise(ad);
     }
 
     @DeleteMapping
-    public void deleteAdvertise(Advertise ad){
+    public void deleteAdvertise(Advertise ad) {
         adService.deleteAdvertise(ad);
     }
 

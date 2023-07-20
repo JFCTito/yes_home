@@ -27,13 +27,13 @@ public class ProfileController {
     
 
     @GetMapping("/{id}")
-    public void getUser(@PathVariable("id") Long id){
-        profileService.getUser(id);
+    public Profile getUser(@PathVariable Long id){
+        return profileService.getUser(id);
     }
 
     @PostMapping
-    public void addUser(Profile profile){
-        profileService.addUser(profile);
+    public Profile addUser(Profile profile){
+        return profileService.addUser(profile);
     }
 
 }
