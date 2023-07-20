@@ -16,7 +16,7 @@ public class AdvertiseService {
     AdvertiseRepository repo;
 
     public List<Advertise> getAllAdvertise() {
-        return (List<Advertise>) repo.findAll();
+        return repo.findAll();
     }
 
     public Advertise getAdvertiseById(Long id) {
@@ -34,12 +34,26 @@ public class AdvertiseService {
 
     public Advertise updateAdvertise(Advertise ad) {
         return repo.save(ad);
-        
-
     }
 
     public void deleteAdvertise(Advertise ad) {
         repo.delete(ad);
+    }
+
+    public List<Advertise> findByType(String type) {
+        return repo.findByType(type);
+    }
+
+    public List<Advertise> findByCategory(String category) {
+        return repo.findByCategory(category);
+    }
+
+    public List<Advertise> findByLocalitation(String localitation) {
+        return repo.findByLocalitation(localitation);
+    }
+
+    public List<Advertise> findByMultiple(String type, String category, String localitation){
+        return repo.findByTypeAndCategoryAndLocalitation(type,category,localitation);
     }
 
 }

@@ -1,7 +1,5 @@
 package com.g14.models;
 
-
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
@@ -27,7 +25,7 @@ public class Advertise {
 
     @Column(name = "title")
     public String title;
-    @Column(name="localitation")
+    @Column(name = "localitation")
     public String localitation;
     @Column(name = "price")
     public double price;
@@ -43,7 +41,7 @@ public class Advertise {
     public String type;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name="fk_user", nullable = false)
+    @JoinColumn(name = "fk_user", nullable = false)
     @JsonIgnore
     private Profile profile;
 
