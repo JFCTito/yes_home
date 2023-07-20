@@ -12,7 +12,7 @@ function ShowAds() {
     const [selectedAdd, setSelectedAdd] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:8080/add')
+        fetch('http://localhost:4000/advertisments')
             .then(response => response.json())
             .then(data => setAddList(data.data))
             .catch(error => console.log(error));
