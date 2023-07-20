@@ -1,0 +1,8 @@
+.logoNav{
+display: flex;
+width: 32%;
+padding: 0.1rem 0.9rem;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+}
