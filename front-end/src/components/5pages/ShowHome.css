@@ -1,0 +1,6 @@
+body{
+    background: url('../../img/greybackground.jpg') fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../pages/Home";
 import Layout from "../Layout/Layout";
 import MyAdds from "../components/5pages/MyAdds.jsx";
@@ -33,7 +33,8 @@ export const router = createBrowserRouter([
             {
                 path: "/edit",
                 element: <EditAdd />,
-            }, {
+            },
+            {
                 path: "/delete",
                 element: <DeleteAdd />,
             },
