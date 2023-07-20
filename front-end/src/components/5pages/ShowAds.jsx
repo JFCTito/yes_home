@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import CardAdd from "../3organisms/CardAdd.jsx"
+import { Cards } from '../1atoms/Cards/Cards.jsx';
 
 function ShowAds() {
 
@@ -41,35 +42,43 @@ function ShowAds() {
     //     </div>
     // )
 
-    const [result, setResult] = useState('');
+    const [advertisements, setAdvertisements] = useState([]);
 
     useEffect(() => {
-      const requestOptions = {
-        method: 'GET',
-        redirect: 'follow'
+      // Función para realizar la petición a la API
+      const fetchAdvertisements = async () => {
+        try {
+          const response = await fetch("http://localhost:4000/advertisments");
+          const data = await response.json();
+          setAdvertisements(data);
+        } catch (error) {
+          console.error("Error al obtener los anuncios:", error);
+        }
       };
   
-      fetch("http://localhost:4000/advertisments", requestOptions)
-        .then(response => response.text())
-        .then(result => setResult(result))
-        .catch(error => console.log('error', error));
+      fetchAdvertisements();
     }, []);
   
     return (
       <div>
-        <h1>Advertisements</h1>
-        <p>{result}</p>
+        <h1>Lista de Anuncios</h1>
+        <ul>
+          {advertisements.map((ad) => (
+            <li key={ad.id}>
+              <Cards img={ad.img} style="cardsSmall"></Cards>
+              <h3>{ad.title}</h3>
+              <p>{ad.localitation}</p>
+              <p>{ad.price}</p>
+              <p>{ad.mts2}</p>
+              <p>{ad.category}</p>
+              <p>{ad.rooms}</p>
+              <p>{ad.type}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     );
-  }
+  };
   
-  function App() {
-    return (
-      <div>
-        <h1>My React App</h1>
-        <ShowAds />
-      </div>
-    );
-  }
 
 export default ShowAds;
