@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import CardAdd from "../3organisms/CardAdd.jsx"
-import { Cards } from '../1atoms/Cards/Cards.jsx';
+import { ImgAdd } from '../1atoms/ImgAdd/ImgAdd.jsx';
+import { TitleAdd } from '../1atoms/TitleAdd/TitleAdd.jsx';
+import { PriceAdd } from '../1atoms/PriceAdd/PriceAdd.jsx';
+import { LocationAdd } from '../1atoms/LocationAdd/LocationAdd.jsx';
 
 function ShowAds() {
 
@@ -65,14 +68,15 @@ function ShowAds() {
         <ul>
           {advertisements.map((ad) => (
             <li key={ad.id}>
-              <Cards img={ad.img} style="cardsSmall"></Cards>
-              <h3>{ad.title}</h3>
-              <p>{ad.localitation}</p>
-              <p>{ad.price}</p>
-              <p>{ad.mts2}</p>
+              <ImgAdd img={ad.img} style="cardsSmall"></ImgAdd>
+              <TitleAdd title={ad.title} style="titleAdd"></TitleAdd>
+              <PriceAdd detail={ad.price} style="priceAdd"></PriceAdd>
+              <LocationAdd location={ad.localitation} style="locationAdd"></LocationAdd>
+              
+              {/* <p>{ad.mts2}</p>
               <p>{ad.category}</p>
               <p>{ad.rooms}</p>
-              <p>{ad.type}</p>
+              <p>{ad.type}</p> */}
             </li>
           ))}
         </ul>
