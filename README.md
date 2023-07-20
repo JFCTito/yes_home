@@ -11,8 +11,9 @@
 
 1. Project Description and Technologies.
 2. How to Install and Run the Project.
-3. User Story: Client and Stakeholders.
-4. Figma.
+3. Test: Back (spring boot).
+4. User Story: Client and Stakeholders.
+5. Figma.
 
 ---
 <h2 align="center">Project Description</h2><br>
@@ -76,6 +77,14 @@ Compile the Spring Boot project using the Maven build command, such as mvn clean
 ### Frontend [React](https://es.react.dev/):
 Run the npm install command to install all the necessary dependencies.
 Configure the API URLs in the React application to point to the server where the Spring Boot part will be hosted. This can be done using environment variables or configuration files, so that they can be easily switched between development and production environments. You can use http://localhost:4000/advertisments.<br><br>
+
+---
+<h2 align="center">Test: Back (spring boot)</h2><br>
+
+<p align="center">
+<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/test_back1.png" width="700" height="500">
+<img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/test_back2.png" width="700" height="500">
+</p>
 
 ---
 
