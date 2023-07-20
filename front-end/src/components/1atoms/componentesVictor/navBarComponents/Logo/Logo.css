@@ -1,6 +1,14 @@
+.logoContainer{
+    margin: 0;
+    width: 32%;
+}
+.ancleLogo{
+    width: 100%;
+    height: 100%;
+}
 .logoNav{
 display: flex;
-width: 32%;
+width: 100%;
 padding: 0.1rem 0.9rem;
 justify-content: space-between;
 align-items: center;
