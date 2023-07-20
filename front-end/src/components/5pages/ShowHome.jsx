@@ -7,9 +7,12 @@ const ShowHome = () => {
     <div>
       <h1 className='eslogan'>Buscamos el hogar perfecto para ti</h1>
       <div className="btnsComprarAlquilar">
-      <Buttons style='btnCTA'  text='Comprar' ruta='/mysearch'/> <Buttons style='btnCTA' text='Alquilar' ruta='/mysearch'/>
+        <Buttons style='btnCTA'  text='Comprar' ruta='/mysearch'/> <Buttons style='btnCTA' text='Alquilar' ruta='/mysearch'/>
       </div>
-      <Input/><Input/>
+      <Input placeholder='Tipo de vivienda'/><Input placeholder='Lugar de residecia'/>
+      <div className="btnBuscar">
+      <Buttons style='btnCTA'  text='Buscar' ruta='/mysearch'/>
+      </div>
     </div>
   )
 }

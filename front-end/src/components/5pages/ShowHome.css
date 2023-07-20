@@ -13,7 +13,7 @@ body{
     margin-bottom: 50px;
 }
 
-.btnsComprarAlquilar{
+.btnsComprarAlquilar, .btnBuscar{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -37,7 +37,3 @@ height: 35px;
 font-size: 16px;
 }
 
-
-input:focus, textarea:focus, select:focus{
-    outline: none;
-}
