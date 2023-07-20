@@ -2,6 +2,21 @@ export default function MyAdds (props) {
     
     const add = props.add;
     
+
+    const handleEditAdd = (add) => {
+        navigate(`/edit/${add.id}`)
+    };
+
+    const handleDeleteAdd = (add) => {
+        navigate(`/delete/${add.id}`);
+    };
+    const cards = add.map((add) => <CardAdd
+        key={add.id}
+        add={add}
+        editAdd={handleEditAdd}
+        deleteAdd={handleDeleteAdd}
+    />);
+
     return (
         <>
         <div className="card">

@@ -7,8 +7,9 @@ export default function CardAdd (props) {
         <div className="card">
             <img src ={add.img} alt="" className="img"/> 
             <div className="contaider-data">
-                <h3>{add.titulo}</h3>
-                <p>{add.description}</p>
+                <h3>{add.title}</h3>
+                <p>{add.price}</p>
+                <p>card</p>
             </div>
             <div className="more">
                 <button onClick={() => props.FullInfoCardAdd(add) }> Mas info </button>

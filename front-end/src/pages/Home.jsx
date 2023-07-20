@@ -1,11 +1,10 @@
-import ShowAds from "../components/5pages/ShowAds.jsx";
-import { NavLink } from "react-router-dom"
+import ShowAdds from "../components/5pages/ShowAdds.jsx";
 
 const Home = () => {
   return (
     <div>
       <main>
-        <ShowAds/>
+        <ShowAdds/>
       </main>
     </div>
   )
