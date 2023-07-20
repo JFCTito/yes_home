@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import CardAdd from "..//3organisms/CardAdd.jsx"
+import CardAdd from "../3organisms/CardAdd.jsx"
 
 function ShowAds() {
 
@@ -26,7 +26,7 @@ function ShowAds() {
         navigate(`/delete/${add.id}`);
     };
 
-    const cards = add.map((add) => <CardAd
+    const cards = add.map((add) => <CardAdd
         key={add.id}
         add={add}
         editAdd={handleEditAdd}

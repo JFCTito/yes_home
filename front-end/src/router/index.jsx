@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Layout from "../Layout/Layout";
-import MyAdds from "../components/pages/MyAdds";
-import CreateAdd from "../components/pages/CreateAdd";
-import EditAdd from "../components/pages/EditAdd";
-import DeleteAdd from "../components/pages/DeleteAdd";
-import ShowAds from "src\pages\ShowAds.jsx";
+import MyAdds from "../components/5pages/MyAdds.jsx";
+import CreateAdd from "../components/5pages/CreateAdd.jsx";
+import EditAdd from "../components/5pages/EditAdd.jsx";
+import DeleteAdd from "../components/5pages/DeleteAdd.jsx";
+import ShowAds from "../components/5pages/ShowAds.jsx";
 
 
 export const router = createBrowserRouter([

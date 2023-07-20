@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import Navbar from "../components/templates/Navbar.jsx";
+import Navbar from "../components/4templates/Navbar.jsx";
 
 const Layout = () => {
     return (
