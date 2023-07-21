@@ -4,6 +4,7 @@ import { ImgAdd } from "../1atoms/ImgAdd/ImgAdd.jsx";
 import { TitleAdd } from "../1atoms/TitleAdd/TitleAdd.jsx";
 import { PriceAdd } from "../1atoms/PriceAdd/PriceAdd.jsx";
 import { LocationAdd } from "../1atoms/LocationAdd/LocationAdd.jsx";
+import "../1atoms/Input/Input.css"
 
 function ShowAds() {
   
@@ -59,6 +60,7 @@ function ShowAds() {
           type="text"
           name="type"
           placeholder="Type"
+          className='input'
           value={filters.type}
           onChange={(e) => setFilters({ ...filters, type: e.target.value })}
         />
@@ -66,6 +68,7 @@ function ShowAds() {
           type="text"
           name="category"
           placeholder="Category"
+          className='input'
           value={filters.category}
           onChange={(e) => setFilters({ ...filters, category: e.target.value })}
         />
@@ -73,6 +76,7 @@ function ShowAds() {
           type="text"
           name="localitation"
           placeholder="Localitation"
+          className='input'
           value={filters.localitation}
           onChange={(e) => setFilters({ ...filters, localitation: e.target.value })}
         />

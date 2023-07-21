@@ -3,7 +3,7 @@ import ShowHome from "../components/5pages/ShowHome.jsx";
 
 const Home = () => {
   return (
-    <div>
+    <div className="fondo">
         <ShowHome/>
     </div>
   );
