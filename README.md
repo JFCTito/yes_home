@@ -28,7 +28,7 @@
 * Angela Coello. Developer.<br>
 * Franci Sánchez Zambrano. Developer.<br>
 * Victor Nash. Developer.<br>
-* Ahinoa. Developer.<br>
+* Ahinoa Aguado. Developer.<br>
   
 ---
 <h2 align="center">Project Description</h2><br>
