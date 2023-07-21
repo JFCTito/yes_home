@@ -6,8 +6,11 @@ import { LocationAdd } from "../1atoms/LocationAdd/LocationAdd.jsx";
 import "../1atoms/Input/Input.css";
 import "../5pages/ShowAds.css";
 import { Buttons } from "../1atoms/buttons/Buttons.jsx";
+import "../1atoms/buttons/Buttons.css"
 
 function ShowAds() {
+
+
   const [advertisements, setAdvertisements] = useState([]);
   const [filters, setFilters] = useState({
     type: "",
@@ -22,19 +25,25 @@ function ShowAds() {
   const fetchAdvertisements = async () => {
     try {
       const params = new URLSearchParams();
-
+      
+      // Verificar si se ha agregado un filtro de "type"
       if (filters.type.trim() !== "") {
         params.append("type", filters.type);
       }
+
+      // Verificar si se ha agregado un filtro de "category"
       if (filters.category.trim() !== "") {
         params.append("category", filters.category);
       }
+
+      // Verificar si se ha agregado un filtro de "localitation"
       if (filters.localitation.trim() !== "") {
         params.append("localitation", filters.localitation);
       }
 
       let apiUrl = "http://localhost:4000/advertisments";
 
+      // Verificar si hay al menos un filtro aplicado
       if (params.toString() !== "") {
         apiUrl += "/filter?" + params.toString();
       }
@@ -50,6 +59,7 @@ function ShowAds() {
   const handleApplyFilters = () => {
     fetchAdvertisements();
   };
+
 
   return (
     <div className="mysearchBgd">
@@ -81,14 +91,7 @@ function ShowAds() {
             setFilters({ ...filters, localitation: e.target.value })
           }
         />
-        {/* <button onClick={handleApplyFilters}>Aplicar Filtros</button> */}
-        <Buttons
-          onClick={handleApplyFilters}
-          style="btnCTA"
-          text="Apply Filters"
-          ruta="/mysearch"
-          id="mysearchButton"
-        />
+        <button id="mysearchButton" className="btnCTA" onClick={handleApplyFilters}>Aplicar Filtros</button>
       </div>
       <ul>
         {advertisements.map((ad) => (

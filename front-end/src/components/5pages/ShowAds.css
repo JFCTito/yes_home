@@ -13,6 +13,19 @@ button {
 }
 
 #mysearchButton {
+  display: flex;
+  width: 180px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
   margin-left: 97px;
 }
 
