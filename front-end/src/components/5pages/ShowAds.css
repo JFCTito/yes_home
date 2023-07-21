@@ -1,22 +1,26 @@
-.mysearchBgd{
-    background-color: white;
+.mysearchBgd {
+  background-color: white;
 }
 
 h1 {
-    padding-top: 50px;
-    color: #5986cb;
+  padding-top: 50px;
+  color: #5986cb;
 }
 
-button{
-    margin-top: 50px;
-    margin-bottom: 50px;
+button {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #mysearchButton {
-margin-left: 97px;
+  margin-left: 97px;
 }
 
-li img{
-    margin-top: 20px;
-margin-left: 8px;
+li img {
+  margin-top: 20px;
+  margin-left: 8px;
+}
+
+ul {
+  margin-bottom: 25px;
 }
