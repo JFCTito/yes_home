@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { ImgAdd } from "../1atoms/ImgAdd/ImgAdd.jsx";
 import { TitleAdd } from "../1atoms/TitleAdd/TitleAdd.jsx";
 import { PriceAdd } from "../1atoms/PriceAdd/PriceAdd.jsx";
 import { LocationAdd } from "../1atoms/LocationAdd/LocationAdd.jsx";
-import "../1atoms/Input/Input.css"
+import "../1atoms/Input/Input.css";
+import "../5pages/ShowAds.css";
+import { Buttons } from "../1atoms/buttons/Buttons.jsx";
 
 function ShowAds() {
-  
   const [advertisements, setAdvertisements] = useState([]);
   const [filters, setFilters] = useState({
     type: "",
@@ -22,7 +22,7 @@ function ShowAds() {
   const fetchAdvertisements = async () => {
     try {
       const params = new URLSearchParams();
-      
+
       if (filters.type.trim() !== "") {
         params.append("type", filters.type);
       }
@@ -51,16 +51,15 @@ function ShowAds() {
     fetchAdvertisements();
   };
 
-
   return (
-    <div>
+    <div className="mysearchBgd">
       <h1>Lista de Anuncios</h1>
-      <div>
+      <div className="searchContainer">
         <input
           type="text"
           name="type"
           placeholder="Type"
-          className='input'
+          className="input2"
           value={filters.type}
           onChange={(e) => setFilters({ ...filters, type: e.target.value })}
         />
@@ -68,7 +67,7 @@ function ShowAds() {
           type="text"
           name="category"
           placeholder="Category"
-          className='input'
+          className="input2"
           value={filters.category}
           onChange={(e) => setFilters({ ...filters, category: e.target.value })}
         />
@@ -76,11 +75,20 @@ function ShowAds() {
           type="text"
           name="localitation"
           placeholder="Localitation"
-          className='input'
+          className="input2"
           value={filters.localitation}
-          onChange={(e) => setFilters({ ...filters, localitation: e.target.value })}
+          onChange={(e) =>
+            setFilters({ ...filters, localitation: e.target.value })
+          }
         />
-        <button onClick={handleApplyFilters}>Aplicar Filtros</button>
+        {/* <button onClick={handleApplyFilters}>Aplicar Filtros</button> */}
+        <Buttons
+          onClick={handleApplyFilters}
+          style="btnCTA"
+          text="Apply Filters"
+          ruta="/mysearch"
+          id="mysearchButton"
+        />
       </div>
       <ul>
         {advertisements.map((ad) => (
@@ -97,6 +105,6 @@ function ShowAds() {
       </ul>
     </div>
   );
-};
+}
 
 export default ShowAds;

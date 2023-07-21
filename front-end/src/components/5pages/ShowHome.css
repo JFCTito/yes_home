@@ -1,4 +1,4 @@
-body{
+/* body{
     background: url('../../img/greybackground.jpg') fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -6,7 +6,7 @@ body{
     text-align: center;
     display:flex;
     justify-content: center;
-}
+} */
 .eslogan{
     color: white;
     margin-top: 50px;
@@ -20,20 +20,15 @@ body{
 
 }
 
-.input{
-    display: flex;
-    height: 35px;
-    font-size: 16px;
-    align-items: center;
-    flex: 1 0 0;
-    align-self: stretch;
-    border-left: 4px solid #3F5879;
-    background: #FFF; 
-    margin: 5% 2%;
-}
-input, select, textarea {
-width: 99%;
+select, textarea {
+width: 90%;
 height: 35px;
 font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
