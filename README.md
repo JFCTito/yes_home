@@ -10,11 +10,11 @@
 <h2>Table of Contents</h2>
 
 1.Team.
-2. Project Description and Technologies.
-3. How to Install and Run the Project.
-4. Test: Back (spring boot).
-5. User Story: Client and Stakeholders.
-6. Figma.
+2. Project Description and Technologies.<br>
+3. How to Install and Run the Project.<br>
+4. Test: Back (spring boot).<br>
+5. User Story: Client and Stakeholders.<br>
+6. Figma.<br>
 
 
 
