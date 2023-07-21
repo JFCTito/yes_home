@@ -9,12 +9,27 @@
 
 <h2>Table of Contents</h2>
 
-1. Project Description and Technologies.
-2. How to Install and Run the Project.
-3. Test: Back (spring boot).
-4. User Story: Client and Stakeholders.
-5. Figma.
+1.Team.
+2. Project Description and Technologies.
+3. How to Install and Run the Project.
+4. Test: Back (spring boot).
+5. User Story: Client and Stakeholders.
+6. Figma.
 
+
+
+<h2 align="center">TEAM</h2><br>
+* Maite Presa. Product Owner.<br>
+* Jesús Fajardo . Scrum Manager.<br>
+* Fco Manuel Saavedra Galiano. Developer.<br>
+* Sabina Perez. Developer.<br>
+* Aida Herraiz Caseres. Developer.<br>
+* Maite Presa. Developer.<br>
+* Angela Coello. Developer.<br>
+* Franci Sánchez Zambrano. Developer.<br>
+* Victor Nash. Developer.<br>
+* Ahinoa. Developer.<br>
+  
 ---
 <h2 align="center">Project Description</h2><br>
 
@@ -148,15 +163,5 @@ Verified user profiles: We ensure the safety and trust of our users by verifying
 </p>
 
 ---
-### TEAM
-* Maite Presa. Product Owner.
-* Jesús Fajardo . Scrum Manager.
-* Fco Manuel Saavedra Galiano. Developer.
-* Sabina Perez. Developer.
-* Aida Herraiz Caseres. Developer.
-* Maite Presa. Developer.
-* Angela Coello. Developer.
-* Franci Sánchez Zambrano. Developer.
-* Victor Nash. Developer.
-* Ahinoa Developer.
+
 
