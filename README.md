@@ -147,4 +147,16 @@ Verified user profiles: We ensure the safety and trust of our users by verifying
 <img src="https://github.com/JFCTito/grupo_14/blob/dev/front-end/src/img/figma4.png" width="150" height="250">
 </p>
 
+---
+### TEAM
+* Maite Presa. Product Owner.
+* Jesús Fajardo . Scrum Manager.
+* Fco Manuel Saavedra Galiano. Developer.
+* Sabina Perez. Developer.
+* Aida Herraiz Caseres. Developer.
+* Maite Presa. Developer.
+* Angela Coello. Developer.
+* Franci Sánchez Zambrano. Developer.
+* Victor Nash. Developer.
+* Ahinoa Developer.
 
