@@ -1,0 +1,13 @@
+.background {
+    background: url('../img/greybackground.jpg') scroll;
+    width: 375px;
+    height: 650px;
+    flex-shrink: 0;
+    display: block;
+    min-height: 650px;
+    height: auto;
+}
+
+:root {
+    width: 375px;
+}

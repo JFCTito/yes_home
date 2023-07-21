@@ -1,0 +1,55 @@
+/* CARACTERISTICAS BASICAS */
+
+.btnStyles {
+    display: flex;
+    width: 180px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.btnStyles, a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btnStyles:hover {
+    border: 2px solid #4A76B8;
+    background: rgba(131, 165, 211, 0.50);
+
+    color: #FFF;
+    text-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+/* CLASES PARA CAMBIAR ESTILOS */
+
+.btnCTA {
+
+    border: 2px solid #4A76B8;
+    background: rgba(42, 70, 106, 0.90);
+
+    color: #FFF;
+
+}
+
+.btnOutlined {
+
+    border: 2px solid #4A76B8;
+    color: #4A76B8;
+}
+
+.btnSecondary {
+    border: 2px solid #4A76B8;
+    background: rgba(131, 165, 211, 0.50);
+}

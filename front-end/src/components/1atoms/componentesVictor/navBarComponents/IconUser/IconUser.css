@@ -1,0 +1,8 @@
+.containerIcon{
+    width: 20%;
+}
+.imgUserCont{
+    width: 40%;
+    flex-shrink: 0;
+    padding-left:30%;
+}

@@ -1,13 +1,13 @@
 import React from 'react'
-
-const Navbar = () => {
+import Logo from "../1atoms/componentesVictor/navBarComponents/Logo/Logo.jsx"
+import NavBG from "../1atoms/componentesVictor/navBarComponents/NavBG/NavBG.jsx"
+import IconUser from "../1atoms/componentesVictor/navBarComponents/IconUser/IconUser.jsx"
+const Navbar = (props) => {
   return (
-    <div>
-        {/* crear login */}
-
-        {/* <NavLink to ="/create ">
-    <button>Añadir un anuncio</button></NavLink> */}
-    </div>
+    <NavBG>
+        <Logo src={props.source}></Logo>
+        <IconUser srcIcon={props.srcIcon}></IconUser>
+    </NavBG>
   )
 }
 

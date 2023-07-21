@@ -1,0 +1,6 @@
+.cardsSmall {
+    width: 359px;
+    height: 257px;
+    flex-shrink: 0;
+    object-fit: cover;
+}

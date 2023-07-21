@@ -1,0 +1,34 @@
+/* body{
+    background: url('../../img/greybackground.jpg') fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+} */
+.eslogan{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btnsComprarAlquilar, .btnBuscar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+select, textarea {
+width: 90%;
+height: 35px;
+font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

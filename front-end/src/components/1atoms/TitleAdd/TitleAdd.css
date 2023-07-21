@@ -1,0 +1,15 @@
+.titleAdd {
+    /* padding: 5px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.50); */
+    color:#FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+}
